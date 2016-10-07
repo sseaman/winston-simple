@@ -93,6 +93,7 @@ Example:
 	"all" 			: "debug",
 	"MyObjectName"	: "info"
 }
+```
 
 ### Log Format
 winston-simple defaults to the standard [Winston](https://github.com/winstonjs/winston) configuration, but with the 
