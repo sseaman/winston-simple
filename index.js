@@ -87,6 +87,7 @@ module.exports = {
 				}
 			}
 		}
+		return this;
 	},	
 
 	/**

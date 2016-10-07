@@ -1,6 +1,6 @@
-var Logger = require('../index.js');
-
-Logger.setLevels({'all' : 'debug'});
+var Logger = require('../index.js').setLevels(
+	{'all' : 'debug'}
+);
 
 var log = Logger.getLogger('testClass');
 // This should work since all loggers default to info
