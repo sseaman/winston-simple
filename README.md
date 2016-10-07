@@ -81,6 +81,7 @@ You can also disable logging for all objects by setting the logging levels to:
 {
 	"all" : "none"
 }
+```
 
 ### Combining Global and per object
 winston-simple also support a combination of per object and global configuration.  This allow a default log level to be 
@@ -122,6 +123,7 @@ log.debug("This is a debug message");
 ### Customization
 winston-simple exposes it's underlying [Winston](https://github.com/winstonjs/winston) instance so that you may 
 configure winston-simple however you want.  
+
 To retreived the instance, simply call `getWinston()` on your winston-simple instance.  Any changes made to the
 returned [Winston](https://github.com/winstonjs/winston) object will be applied to all loggers.
 
@@ -148,7 +150,7 @@ log.debug("This will NOT be logged");
 var log = require('winston-simple').getLogger('SomeObject');
 
 log.info("This will be logged");
-log.info("This will also be logged");
+log.debug("This will also be logged because it was configued in index.js");
 ```
 
 ## License
