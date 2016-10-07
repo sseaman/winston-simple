@@ -70,6 +70,9 @@ module.exports = {
 
 			if (this._logLevels['all']) { 
 				if (this._logLevels['all'] != 'none') { // turning on everything
+					if (!logger.transports.console) {
+						logger.transports.console = new winston.transports.Console();
+					}
 					logger.transports.console.level = this._logLevels['all'];
 				}
 				else { // all = none so remove everything
