@@ -31,8 +31,6 @@ To install the latest development version:
 -----
 winston-simple is maintained in GitHub.  For full source to to [GitHub winston-simple](https://github.com/sseaman/winston-simple)
 
-For full API documetation, see [SkillVC API docs](https://sseaman.github.io/winston-simple/)
-
 ## Usage
 -----
 winston-simple is a log4j style wrapper for [Winston](https://github.com/winstonjs/winston) logging that supports
