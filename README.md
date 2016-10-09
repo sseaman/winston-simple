@@ -154,6 +154,6 @@ log.debug("This will also be logged because it was configued in index.js");
 
 ## License
 -----
-SkillVC is copyright (c) 2016-present Sloan Seaman <sloan@pobox.com>.
+winston-simple is copyright (c) 2016-present Sloan Seaman <sloan@pobox.com>.
 
-SkillVC is free software, licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+winston-simple is free software, licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
