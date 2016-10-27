@@ -1,3 +1,9 @@
+### v1.0.6 - (2016-10-26)
+
+#### Bug Fixes
+* Log level not being adhered to  
+    Setting the log level for classes not yet set was not working due to using 'this.' on a object level variable
+
 ### v1.0.5 - (2016-10-21)
 
 #### Bug Fixes
