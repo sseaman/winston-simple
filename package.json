@@ -1,6 +1,6 @@
 {
   "name": "winston-simple",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A simple, log4j style wrapper for logging.  Easier to setup and use than the default Winston configuration.",
   "main": "index.js",
   "directories": {

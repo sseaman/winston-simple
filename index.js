@@ -1,7 +1,7 @@
 /**
  * @author Sloan Seaman 
  * @copyright 2016 and on
- * @version .1
+ * @version 1.0.8
  * @license https://www.apache.org/licenses/LICENSE-2.0 Apache License 2.0
  */
 
@@ -70,13 +70,18 @@ module.exports = {
 
 			if (logLevels['all']) { 
 				if (logLevels['all'] != 'none') { // turning on everything
-					logger.add(winston.transports.Console, {
-						level		: logLevels['all'],
-						json 		: false,
-				    	timestamp 	: true,
-				    	label		: key,
-				    	align		: true
-					}, false);
+					if (logger.transports.console) {
+						logger.transports.console.level = logLevels['all'];
+					}
+					else {
+						logger.add(winston.transports.Console, {
+							level		: logLevels['all'],
+							json 		: false,
+					    	timestamp 	: true,
+					    	label		: key,
+					    	align		: true
+						}, false);
+					}
 				}
 				else { // all = none so remove everything
 					logger.remove(winston.transports.Console)
